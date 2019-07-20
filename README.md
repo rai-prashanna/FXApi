@@ -23,21 +23,14 @@ $ mvn clean install
 $ cd target
 $ java -jar currencyAggregator-0.0.1-SNAPSHOT.jar
 $ use this url on web browser (http://localhost:8080/2018-01-01/2019-01-01/agg?func=median&symbols=sek&base=usd)
-
 ```
+[http://localhost:8080/2018-01-01/2019-01-01/agg?func=median&symbols=sek&base=usd](http://localhost:8080/2018-01-01/2019-01-01/agg?func=median&symbols=sek&base=usd)
 
-End with an example of getting some data out of the system or using it for a little demo
 
-### And coding style tests
 
-Explain what these tests test and why
+### little demo
 
-```
-Give an example
-```
-
-## Deployment
-
+![alt text](https://github.com/rai-prashanna/FXApi/blob/master/output.png)
 
 ## Built With
 
