@@ -43,7 +43,7 @@ $ use this url on web browser (http://localhost:8080/2018-01-01/2019-01-01/agg?f
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](http://license.md/) file for details
 
 ## Acknowledgments
 
