@@ -13,7 +13,6 @@ public class Forex {
 	private String fun;
 
 	@JsonProperty
-	//private Rate rates;
 	private Map<String, Double> rates;
 
 	public Forex() {

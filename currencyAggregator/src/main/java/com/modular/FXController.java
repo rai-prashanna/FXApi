@@ -4,8 +4,6 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,8 +11,6 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 public class FXController {
-	private static final Logger log = LoggerFactory
-			.getLogger(FXController.class);
 
 	@GetMapping("/2018-01-01/2019-01-01/agg")
 	Forex findAll(@RequestParam String symbols, @RequestParam String base,
@@ -23,13 +19,16 @@ public class FXController {
 		Forex response = new Forex();
 		if (func.equals("median")) {
 			RestTemplate restTemplate = new RestTemplate();
-			//Since task was to median exchange rate for USD to SEK during last year
-			//i.e 2018-01-01 to 2019-01-01 so hard coded logic 
+			// Since task was to median exchange rate for USD to SEK during last
+			// year
+			// i.e 2018-01-01 to 2019-01-01 so hard coded logic
 			String strtDate = "2018-01-01";
 			String endDate = "2019-01-01";
 			MedianCalculator median = new MedianCalculator();
 			double result = 0;
-
+			// double[] temp = new double[365];
+			// int index = 0;
+			long lStartTime = System.currentTimeMillis();
 			for (LocalDate date = LocalDate.parse(strtDate); date
 					.isBefore(LocalDate.parse(endDate)); date = date
 					.plusDays(1)) {
@@ -38,17 +37,13 @@ public class FXController {
 								+ "/?symbols=sek&base=usd", Forex.class);
 
 				result = median.getMedian(forex.getRates().get("SEK"));
-
 			}
 			response.setBase("USD");
 			response.setFun("median");
-
-			Map<String, Double> rates=new HashMap<String, Double>();
+			Map<String, Double> rates = new HashMap<String, Double>();
 			rates.put("SEK", result);
-			response.setRates(rates);;
+			response.setRates(rates);
 		}
-
 		return response;
 	}
-
 }
