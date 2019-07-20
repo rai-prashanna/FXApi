@@ -11,38 +11,22 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+* [install java8](https://askubuntu.com/questions/464755/how-to-install-openjdk-8-on-14-04-lts) 
+* [install Apache Maven 3.6.0](https://www.mkyong.com/maven/how-to-install-maven-in-ubuntu/) 
 
 ```
-Give the example
-```
 
-And repeat
+### To run in your local machine
 
 ```
-until finished
+$ git clone https://github.com/rai-prashanna/FXApi
+$ cd <Working Directory>/FXApi/currencyAggregator
+$ mvn clean install 
+$ cd target
+$ java -jar currencyAggregator-0.0.1-SNAPSHOT.jar
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ### And coding style tests
 
