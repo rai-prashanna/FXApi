@@ -6,15 +6,13 @@ Currency Agrregator
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
 
+### Prerequisites
 What things you need to install the software and how to install them
 
-```
 * [install java8](https://askubuntu.com/questions/464755/how-to-install-openjdk-8-on-14-04-lts) 
 * [install Apache Maven 3.6.0](https://www.mkyong.com/maven/how-to-install-maven-in-ubuntu/) 
 
-```
 
 ### To run in your local machine
 
@@ -24,7 +22,7 @@ $ cd <Working Directory>/FXApi/currencyAggregator
 $ mvn clean install 
 $ cd target
 $ java -jar currencyAggregator-0.0.1-SNAPSHOT.jar
-$ copy this url (http://localhost:8080/2018-01-01/2019-01-01/agg?func=median&symbols=sek&base=usd)
+$ use this url on web browser (http://localhost:8080/2018-01-01/2019-01-01/agg?func=median&symbols=sek&base=usd)
 
 ```
 
