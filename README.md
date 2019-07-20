@@ -1,0 +1,2 @@
+# FXApi
+Currency Agrregator
