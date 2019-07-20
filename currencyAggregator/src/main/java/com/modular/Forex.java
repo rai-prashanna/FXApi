@@ -1,8 +1,10 @@
 package com.modular;
 
+import java.util.Map;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class RestResponse {
+public class Forex {
 
 	@JsonProperty
 	private String base;
@@ -11,9 +13,10 @@ public class RestResponse {
 	private String fun;
 
 	@JsonProperty
-	private Rate rates;
+	//private Rate rates;
+	private Map<String, Double> rates;
 
-	public RestResponse() {
+	public Forex() {
 	}
 
 	public String getBase() {
@@ -32,17 +35,12 @@ public class RestResponse {
 		this.fun = fun;
 	}
 
-	public Rate getRates() {
+	public Map<String, Double> getRates() {
 		return rates;
 	}
 
-	public void setRates(Rate rates) {
+	public void setRates(Map<String, Double> rates) {
 		this.rates = rates;
 	}
-    
-	@Override
-	public String toString() {
-		
-		return this.rates.toString();
-	}
+
 }
