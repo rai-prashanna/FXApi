@@ -24,6 +24,8 @@ $ cd <Working Directory>/FXApi/currencyAggregator
 $ mvn clean install 
 $ cd target
 $ java -jar currencyAggregator-0.0.1-SNAPSHOT.jar
+$ copy this url (http://localhost:8080/2018-01-01/2019-01-01/agg?func=median&symbols=sek&base=usd)
+
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
