@@ -42,9 +42,4 @@ public  class MedianCalculator {
 		return (double) heapMin.peek();
 	}
 
-//	public static void main(String[] args) {
-//		double[] arr = { 2.0, 5.0, 15.1, 1.0, 3.2, 4.8, 17.2 };
-//		median(arr);
-//
-//	}
 }
