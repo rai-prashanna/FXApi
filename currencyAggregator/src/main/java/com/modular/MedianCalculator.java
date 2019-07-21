@@ -4,6 +4,10 @@ package com.modular;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+/** 
+ * Contains utility necessary for calculating median from stream of datas 
+ * @author Pratick Rai 
+ */ 
 public  class MedianCalculator {
 	private  PriorityQueue<Double> heapMin; 
 	private  PriorityQueue<Double> heapMax;

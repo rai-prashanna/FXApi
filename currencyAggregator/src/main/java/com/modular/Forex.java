@@ -4,6 +4,12 @@ import java.util.Map;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/** 
+ * Json serializer of forex api i.e
+ * http://<base-url>/<start-date>/<end-date>/agg?func=median&symbols=sek&base=usd
+ * @author Pratick Rai 
+ */
+
 public class Forex {
 
 	@JsonProperty
