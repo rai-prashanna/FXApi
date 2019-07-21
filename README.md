@@ -43,6 +43,7 @@ $ use this url on web browser (http://localhost:8080/2018-01-01/2019-01-01/agg?f
 
 ## License
 
+[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rai-prashanna/FXApi/blob/master/LICENSE)
 This project is licensed under the MIT License - see the [LICENSE.md](http://license.md/) file for details
 
 ## Acknowledgments
